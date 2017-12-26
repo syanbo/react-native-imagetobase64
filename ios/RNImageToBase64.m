@@ -18,7 +18,6 @@ RCT_EXPORT_METHOD(getBase64:(NSString *)uri callback:(RCTResponseSenderBlock)cal
 {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE()
 
 @end
   
