@@ -3,7 +3,7 @@
 
 ## Getting started
 
-`$ npm install react-native-image-to-base64 --save`
+`$ npm install https://github.com/syanbo/react-native-imagetobase64.git --save`
 
 ### Mostly automatic installation
 
@@ -34,20 +34,12 @@
       compile project(':react-native-image-to-base64')
   	```
 
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNImageToBase64.sln` in `node_modules/react-native-image-to-base64/windows/RNImageToBase64.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Image.To.Base64.RNImageToBase64;` to the usings at the top of the file
-  - Add `new RNImageToBase64Package()` to the `List<IReactPackage>` returned by the `Packages` method
-
 
 ## Usage
 ```javascript
 import RNImageToBase64 from 'react-native-image-to-base64';
 
 // TODO: What to do with the module?
-RNImageToBase64;
+RNImageToBase64.getBase64(uri,(err, base64)=>{})
 ```
   
